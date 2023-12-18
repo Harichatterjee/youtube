@@ -46,20 +46,23 @@
                 </ul>
                 <h1>PERSONAL DETAILS</h1>
 
-                <div class="form">
+                <div class="form " onsubmit="return validation()">
                     <div class="form-group ">
                         <label>First Name</label>
                         <input type="text" name="" placeholder="First Name" id="fname" class="form-control ">
+                        <div id="nresult"></div>
                     </div>
 
                     <div class="form-group">
                         <label>Last Name</label>
                         <input type="text" name="" placeholder="Last Name" id="lname" class="form-control">
+                        <div id="lnresult"></div>
                     </div>
 
                     <div class="form-group">
                         <label>Date Of Birth</label>
                         <input type="date" name="" placeholder="D.B.O" id="dob" class="form-control">
+                        <div id="dresult"></div>
                     </div>
 
                     <div class="form-group">
@@ -144,6 +147,7 @@
                         <span class="round_btn">3</span>
                         <span class="text">Login Details</span>
                     </li>
+
                 </ul>
                 <h1>LOGIN DETAILS</h1>
 
@@ -179,14 +183,17 @@
                 </div>
             </div>
             <div class="form_page">
-                <h1 class="submit">Your Data Has Been Submitted</h1>
+                <div class="fourth">
+                <h1 class="submit text-white">Your Data Has Been Submitted</h1>
+                <label class="text-white">Student Name:<span id="sname" class="text-white"></span></label><br>
                 <div class="reload_btn1">
                     <button class="reload_btn" onclick="location.reload()">Reload</button>
                 </div>
 
              </div> 
+            </div>
         </div>
-        </div>
+        
         
         <div class="Allbtn">
             <div class="startbtn">StartColor</div>
@@ -198,21 +205,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".multistep_form_area .form_page .btn #next").click(function () {
-                $(this).parents(".form_page").fadeOut('fast');
-                $(this).parents(".form_page").next().fadeIn('fast');
-            });
-            $(".multistep_form_area .form_page .btn #Previous").click(function () {
-                $(this).parents(".form_page").fadeOut('fast');
-                $(this).parents(".form_page").prev().fadeIn('fast');
-            });
-            $(".multistep_form_area .form_page .btn #submit").click(function () {
-                $(this).parents(".form_page").fadeOut('fast');
-                $(this).parents(".form_page").next().fadeIn('fast');
-            });
-
-        })
+      
 
         var randomColor = function () {
             let hex = "0123456789ABCDEF";
@@ -239,6 +232,44 @@
             interval = null;
         })
 
+
+        document.querySelector(".form").addEventListener("click",function(){
+            var a=document.querySelector("#fname").value;
+            if(a == ""){
+                document.querySelector("#nresult").innerHTML="Please fill the input box"
+                return false
+            }
+            if (!isNaN(a)){
+                document.querySelector("#nresult").innerHTML="Only Charecter"
+                return false
+            }
+            document.getElementById("sname").innerHTML=a;
+        })
+
+        $(document).ready(function () {
+            $(".multistep_form_area .form_page .btn #next").click(function () {
+                $(this).parents(".form_page").fadeOut('fast');
+                $(this).parents(".form_page").next().fadeIn('fast');
+            });
+            $(".multistep_form_area .form_page .btn #Previous").click(function () {
+                $(this).parents(".form_page").fadeOut('fast');
+                $(this).parents(".form_page").prev().fadeIn('fast');
+            });
+            $(".multistep_form_area .form_page .btn #submit").click(function () {
+                $(this).parents(".form_page").fadeOut('fast');
+                $(this).parents(".form_page").next().fadeIn('fast');
+            });
+
+        })
+        // function validation(){
+        //     var a=document.querySelector("#fname").value;
+        // if(a==""){
+        //  document.querySelector("#nresult").innerHTML="Please fill the input box"
+        //  return false;
+          
+        // }
+        // }
+       
     </script>
 
 </body>
