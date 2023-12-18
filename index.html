@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" class="css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+
+        <div class="multistep_form_area">
+
+            <div class="form_page">
+                 <div class="first_picture"> 
+                <ul class="indecators">
+                    <li class="active">
+                        <span class="round_btn">1</span>
+                        <span class="text">Personal Details</span>
+                    </li>
+                    <li>
+                        <span class="round_btn">2</span>
+                        <span class="text">Contact Details</span>
+                    </li>
+                    <li>
+                        <span class="round_btn">3</span>
+                        <span class="text">Login Details</span>
+                    </li>
+                </ul>
+                <h1>PERSONAL DETAILS</h1>
+
+                <div class="form">
+                    <div class="form-group ">
+                        <label>First Name</label>
+                        <input type="text" name="" placeholder="First Name" id="fname" class="form-control ">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" name="" placeholder="Last Name" id="lname" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Date Of Birth</label>
+                        <input type="date" name="" placeholder="D.B.O" id="dob" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select class="form-control">
+                            <option value="">Chose Your Gender</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Next" id="next">
+                    </div>
+                 </div> 
+                </div>
+            </div>
+
+            <div class="form_page">
+                 <div class="second_picture"> 
+                <ul class="indecators">
+                    <li class="active">
+                        <span class="round_btn">1</span>
+                        <span class="text">Personal Details</span>
+                    </li>
+                    <li class="active">
+                        <span class="round_btn">2</span>
+                        <span class="text">Contact Details</span>
+                    </li>
+                    <li>
+                        <span class="round_btn">3</span>
+                        <span class="text">Login Details</span>
+                    </li>
+                </ul>
+                <h1>CONTACT DETAILS</h1>
+
+                <div class="form">
+                    <div class="form-group">
+                        <label>Country</label>
+                        <input type="text" name="" placeholder="Country" id="fname" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>State</label>
+                        <input type="text" name="" placeholder="State" id="lname" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" name="" placeholder="City" id="dob" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone No:</label>
+                        <input type="number" name="" placeholder="Phone No:" id="dob" class="form-control">
+                    </div>
+
+                    <div class="btn">
+                        <input type="submit" value="Next" id="next">
+
+
+                        <input type="submit" value="Previous" class="hp" id="Previous">
+
+
+                    </div>
+                 </div> 
+            </div>
+        </div>
+            
+
+            <div class="form_page">
+                <div class="third_picture"> 
+                <ul class="indecators">
+                    <li class="active">
+                        <span class="round_btn">1</span>
+                        <span class="text">Personal Details</span>
+                    </li>
+                    <li class="active">
+                        <span class="round_btn">2</span>
+                        <span class="text">Contact Details</span>
+                    </li>
+                    <li class="active">
+                        <span class="round_btn">3</span>
+                        <span class="text">Login Details</span>
+                    </li>
+                </ul>
+                <h1>LOGIN DETAILS</h1>
+
+                <div class="form">
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input type="text" name="" placeholder="User Name" id="fname" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Id</label>
+                        <input type="email" name="" placeholder="Email Id" id="lname" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="" placeholder="Password" id="dob" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Facebook</label>
+                        <input type="text" name="" placeholder="Facebook" id="dob" class="form-control">
+                    </div>
+
+                    <div class="btn">
+
+
+
+                        <input type="submit" value="Previous" class="hp" id="Previous">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="form_page">
+                <h1 class="submit">Your Data Has Been Submitted</h1>
+                <div class="reload_btn1">
+                    <button class="reload_btn" onclick="location.reload()">Reload</button>
+                </div>
+
+             </div> 
+        </div>
+        </div>
+        
+        <div class="Allbtn">
+            <div class="startbtn">StartColor</div>
+            <div class="stopbtn">StopColor</div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".multistep_form_area .form_page .btn #next").click(function () {
+                $(this).parents(".form_page").fadeOut('fast');
+                $(this).parents(".form_page").next().fadeIn('fast');
+            });
+            $(".multistep_form_area .form_page .btn #Previous").click(function () {
+                $(this).parents(".form_page").fadeOut('fast');
+                $(this).parents(".form_page").prev().fadeIn('fast');
+            });
+            $(".multistep_form_area .form_page .btn #submit").click(function () {
+                $(this).parents(".form_page").fadeOut('fast');
+                $(this).parents(".form_page").next().fadeIn('fast');
+            });
+
+        })
+
+        var randomColor = function () {
+            let hex = "0123456789ABCDEF";
+            let color = "#";
+            for (var a = 0; a < 6; a++) {
+                color += hex[Math.floor(Math.random() * 16)];
+
+            }
+            return color;
+        };
+        console.log(randomColor());
+
+        let interval;
+        document.querySelector(".startbtn").addEventListener("click", function () {
+            if (!interval) {
+                interval = setInterval(function () {
+                    document.body.style.backgroundColor = randomColor();
+                }, 3000)
+            }
+
+        });
+        document.querySelector(".stopbtn").addEventListener("click", function () {
+            clearInterval(interval)
+            interval = null;
+        })
+
+    </script>
+
+</body>
+
+</html>
